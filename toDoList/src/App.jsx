@@ -29,7 +29,7 @@ function App() {
 
   const [search, setSerch] = useState ("");
   const [filter, setFilter] = useState("All");
-  const [sort, setSort] = useState("Asc");
+  const [sort, setSort] = useState("Cres");
 
 
   const addTodo = (text, category) => {
@@ -78,7 +78,7 @@ function App() {
         )
         
         .sort((a, b)=>
-          sort === "Asc"
+          sort === "Cres"
           ?a.text.localeCompare(b.text)
           : b.text.localeCompare(a.text)
         )
