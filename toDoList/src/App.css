@@ -67,3 +67,13 @@ select{
   border: 1px solid #ddd;
   border-radius: 3px;
 }
+
+button.complete{
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+button.remove{
+  background-color: #d9534f;
+  color: #fff;
+}
