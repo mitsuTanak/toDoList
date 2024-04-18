@@ -1,13 +1,28 @@
 body{
   font-family: Arial, sans-serif;
-  color: #333;
+  color: #000;
 
   background-color: #f4f4f4;
   background-image: url("./img/bg.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 
   padding: 30px;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #333; /* Cor de fundo transparente */
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to top, #cfb04a 25%, #f7e480 20%,#fff 10%, #f7e480 20%, #cfb04a 25%);
+  background-repeat: no-repeat;
+  border-radius: 6px;
 }
 
 .app{
@@ -16,7 +31,13 @@ body{
   padding: 0.5rem 2rem;
   border-radius: 10px;
 
-  background-color: #efefef;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.5);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(12.1px);
+-webkit-backdrop-filter: blur(12.1px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 h1{
