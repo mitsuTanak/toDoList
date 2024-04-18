@@ -40,6 +40,7 @@ button{
   color: #fff;
 
   padding: 5px 10px;
+  margin-right: 10px;
   margin-left: 5px;
 
   border: none;
@@ -76,4 +77,41 @@ button.complete{
 button.remove{
   background-color: #d9534f;
   color: #fff;
+}
+
+.todo-list{
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+
+  border-bottom: 1px solid #555;
+}
+
+.todo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.filter,
+.search{
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #555;
+}
+
+.filter-options{
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.filter-options div {
+  flex: 1 1 0;
 }
