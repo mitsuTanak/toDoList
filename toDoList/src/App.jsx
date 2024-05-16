@@ -6,7 +6,7 @@ import Search from './components/Search';
 import Filter from './components/Filter';
 
 function App() {
-  const [todos, setTodos] = useState([
+  const [ todos, setTodos] = useState([
     {
       id:1,
       text:"Criar funcionalidade X no sistema",
@@ -66,7 +66,7 @@ function App() {
 
       <Filter filter={filter} setfilter={setFilter} setSort={setSort}/>
       <div className="todo-list">
-        {todos
+        {todos 
         .filter((todo) =>
           filter === "All"
           ? true: filter === "Completed"
